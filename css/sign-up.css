@@ -1,0 +1,87 @@
+#sign-up {
+    padding: 4rem;
+    background-image: url('../assets/subscribe_bg.png');
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--color-white);
+    text-align: center;
+}
+
+#sign-up h1 {
+    font-size: clamp(2.4rem, 6vw, 6rem);
+    letter-spacing: -2px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+#sign-up p {
+    font-size: 1.4rem;
+    margin: clamp(0.6rem, 4vw, 4rem) 0;
+    font-weight: 300;
+}
+
+.sign-up__cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 700px;
+    width: max(500px, 50vw);
+    margin: 0 auto;
+    border: 1px solid var(--color-white);
+    height: 80px;
+    border-radius: 50px;
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+
+
+.sign-up__input, .sign-up__input:focus, .sign-up__input:active {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+    color: var(--color-white);
+    font-size: 1.2rem;
+    flex: 1;
+    padding: 1rem;
+}
+
+.sign-up__input::placeholder, .sign-up__input:focus::placeholder {
+    color: var(--color-white);
+    opacity: 0.5;
+}
+
+
+.sign-up__button {
+    color: var(--color-white);
+    background-color: var(--black-200);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.sign-up__button:hover, .sign-up__button:active {
+    background-color: var(--color-white);
+    color: var(--black-200);
+}
+
+@media screen and (max-width: 728px) {
+    #sign-up {
+        padding: 4rem 2rem;
+    }
+    
+    .sign-up__cta {
+        border: 0;
+        flex-direction: column;
+        align-items: stretch;
+        width: 80vw;
+        gap: 1rem;
+    }
+
+    .sign-up__input, .sign-up__input:focus, .sign-up__input:active {
+        border: 1px solid var(--color-white);
+        padding: 1rem 2rem;
+        border-radius: 1.6rem; 
+    }
+}

@@ -1,0 +1,120 @@
+#trending {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    position: relative;;
+}
+
+.trending__box {
+    padding: 4rem;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.trending__image-1, .trending__image-2 {
+    background-color: var(--color-white);
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trending__image-1 {
+    background-image: url('../assets/japanese_sushi.png');
+    background-position: right top;
+}
+
+.trending__image-2 {
+    background-image: url('../assets/japanese_drinks.png');
+    background-position: left top;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.trending__image-1 img, .trending__image-2 img {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+.trending__discover {
+    width: min(12vw, 200px);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--black-200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1.2rem, 1.6vw, 2.4rem);
+    color: var(--color-white);
+    font-family: var(--plus-jakarta-sans), sans-serif;
+    font-weight: 600;
+}
+
+.trending__box ul {
+    font-family: var(--plus-jakarta-sans), sans-serif;
+    font-size: clamp(1.0rem, 1.2vw, 2.0rem);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    row-gap: 1rem;
+}
+
+.trending__box li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.check-icon {
+  color: white;               
+  background-color: var(--primary-color);     
+  border-radius: 50%;         
+  padding: 0.5rem;            
+  font-size: 1rem;            
+  display: inline-flex;       
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 1024px) {
+    #trending {
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+
+    .trending__discover {
+        display: none;
+    }
+
+    .trending__box {
+        aspect-ratio: auto;
+        padding: 2rem 5vw;
+    }
+
+    .trending__image-2 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .trending__image-1, .trending__image-2 {
+        background-size: contain;
+    }
+
+    .trending__image-1 img, .trending__image-2 img {
+        height: 30vw;
+        width: auto;
+    }
+}
