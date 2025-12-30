@@ -14,6 +14,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
+    position: relative;
 }
 
 .trending__image-1, .trending__image-2 {
@@ -43,6 +44,38 @@
     width: 50%;
     height: auto;
     object-fit: contain;
+}
+
+.arrow-h {
+    position: absolute;
+    width: 60% !important;
+}
+
+.arrow-v {
+    position: absolute;
+    height: 60% !important;
+}
+
+.arrow-w {
+    top: -2px;
+    left: 16%;
+}
+
+.arrow-e {
+    bottom: -2px;
+    right: 16%;
+    transform: rotate(180deg);
+}
+
+.arrow-n {
+    top: 16%;
+    left: -25%;
+}
+
+.arrow-s {
+    bottom: 16%;
+    right: -25%;
+    transform: rotate(180deg);
 }
 
 .trending__discover {
@@ -116,5 +149,9 @@
     .trending__image-1 img, .trending__image-2 img {
         height: 30vw;
         width: auto;
+    }
+
+    .arrow {
+        display: none;
     }
 }
