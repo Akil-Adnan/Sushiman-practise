@@ -151,7 +151,8 @@
         width: auto;
     }
 
-    .arrow {
+    .arrow-h, .arrow-v {
         display: none;
     }
 }
+
