@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="assets/sushi-9.png" />
     <title>SushiMan</title>
   </head>
@@ -15,10 +16,10 @@
     <header>
       <!-- Nav Bar -->
       <nav>
-        <div class="header__logo">SushiMan</div>
+        <div class="header__logo"><h4 data-aos="fade-down">SushiMan</h4></div>
         <div class="header__links">
           <!-- Desktop and Tablet Layout -->
-          <ul class="header__menu">
+          <ul class="header__menu" data-aos="fade-down">
             <li><a href="#menu">Menu</a></li>
             <li><a href="#food">Food</a></li>
             <li><a href="#services">Services</a></li>
@@ -26,17 +27,17 @@
             <li><img src="assets/search.svg" alt="search" /></li>
           </ul>
           <!-- For Mobile -->
-          <ul class="header__menu-mobile">
+          <ul class="header__menu-mobile" data-aos="fade-down">
             <li><img src="assets/menu.svg" alt="menu" /></li>
           </ul>
         </div>
       </nav>
       <!-- Hero Section -->
       <div class="hero__image">
-        <h1>日 <br />本 <br />食</h1>
-        <div class="hero__background"></div>
+        <h1 data-aos="fade-up">日 <br />本 <br />食</h1>
+        <div class="hero__background" data-aos="fade-up"></div>
       </div>
-      <div class="hero__content">
+      <div class="hero__content" data-aos="fade-left">
         <div class="hero__text">
           <h1>Feel the taste of Japanese foods</h1>
           <p>
@@ -51,7 +52,7 @@
             </button>
           </div>
         </div>
-        <div class="hero__stats">
+        <div class="hero__stats" data-aos="fade-up">
           <div class="hero__customers">
             <h4>24k+</h4>
             <p>Happy <br />customers</p>
@@ -73,17 +74,17 @@
         <!-- Left Column (Images) -->
         <div class="about__left-column">
           <div class="about__image-1">
-            <img src="assets/sushi-3.png" alt="sushi-1" />
+            <img src="assets/sushi-3.png" alt="sushi-1" data-aos="fade-left" />
           </div>
           <div class="about__image-2">
-            <img src="assets/sushi-2.png" alt="sushi-2" />
+            <img src="assets/sushi-2.png" alt="sushi-2" data-aos="fade-left" />
           </div>
           <button class="btn about__button">
             Learn more <img src="assets/arrow-up-right.svg" alt="arrow-right" />
           </button>
         </div>
         <!-- Right Column (Content) -->
-        <div class="about__right-column">
+        <div class="about__right-column" data-aos="fade-left">
           <h3 class="primary">About Us / 私たちに関しては</h3>
           <h2>Our mission is to bring true Japanese flavours to you.</h2>
           <p>
@@ -95,9 +96,9 @@
       </section>
       <!-- Food Section -->
       <section id="food">
-        <h2>Popular Food / 人気</h2>
+        <h2 data-aos="flip-up">Popular Food / 人気</h2>
         <!-- Food Categories -->
-        <div class="food__categories">
+        <div class="food__categories" data-aos="fade-up">
           <button class="active">All</button>
           <button><img src="assets/sushi-9.png" alt="sushi-9" />Sushi</button>
           <button><img src="assets/sushi-8.png" alt="sushi-8" />Ramen</button>
@@ -105,38 +106,38 @@
           <button><img src="assets/sushi-6.png" alt="sushi-6" />Danggo</button>
           <button>Others</button>
         </div>
-        <div class="food__container">
-          <div class="food__card">
+        <div class="food__container" data-aos="fade-up">
+          <article class="food__card">
             <img src="assets/sushi-11.png" alt="sushi-11" />
             <h4>Chezu Sushi</h4>
             <div class="food__rating">
               <p><i class="fas fa-star"></i> 4.8</p>
               <p>$21.00</p>
             </div>
-          </div>
-          <div class="food__card card-active">
+          </article>
+          <article class="food__card card-active">
             <img src="assets/sushi-10.png" alt="sushi-10" />
             <h4>Originale Sushi</h4>
             <div class="food__rating">
               <p><i class="fas fa-star"></i> 4.8</p>
               <p>$21.00</p>
             </div>
-          </div>
-          <div class="food__card">
+          </article>
+          <article class="food__card">
             <img src="assets/sushi-12.png" alt="sushi-12" />
             <h4>Ramen Legendo</h4>
             <div class="food__rating">
               <p><i class="fas fa-star"></i> 4.8</p>
               <p>$21.00</p>
             </div>
-          </div>
+          </article>
         </div>
         <button class="btn food__button">Explore Food</button>
       </section>
       <!-- Trending Section -->
       <section id="trending">
         <!-- Trending Text 1 -->
-        <div class="trending__text-1 trending__box">
+        <div class="trending__text-1 trending__box" data-aos="fade-right">
           <h3 class="primary">What’s Trending / トレンド</h3>
           <h2>Japanese Sushi</h2>
           <p>Feel the taste of the most delicious Sushi here.</p>
@@ -151,10 +152,14 @@
         </div>
         <!-- Trending Image 1 -->
         <div class="trending__image-1 trending__box">
-          <img src="assets/sushi-5.png" alt="japanese sushi" />
+          <img
+            src="assets/sushi-5.png"
+            alt="japanese sushi"
+            data-aos="fade-left"
+          />
         </div>
         <!-- Trending Text 2 -->
-        <div class="trending__text-2 trending__box">
+        <div class="trending__text-2 trending__box" data-aos="fade-left">
           <h3 class="primary">What’s Trending / トレンド</h3>
           <h2>Japanese Drinks</h2>
           <p>Feel the taste of most delicious Japanese drinks here.</p>
@@ -169,16 +174,20 @@
         </div>
         <!-- Trending Image 2 -->
         <div class="trending__image-2 trending__box">
-          <img src="assets/sushi-4.png" alt="japanese drinks" />
+          <img
+            src="assets/sushi-4.png"
+            alt="japanese drinks"
+            data-aos="fade-right"
+          />
         </div>
         <div class="trending__discover">DISCOVER</div>
       </section>
       <!-- Sign up Section -->
       <section id="sign-up">
-        <h1>Get offers straight <br />to your inbox</h1>
+        <h1 data-aos="flip-up">Get offers straight <br />to your inbox</h1>
         <p>Sign up for the Sushi newsletter</p>
         <!-- Sign up Input Card -->
-        <div class="sign-up__cta">
+        <div class="sign-up__cta" data-aos="fade-up">
           <input
             type="email"
             placeholder="Enter your email"
@@ -212,5 +221,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
